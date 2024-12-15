@@ -3,6 +3,11 @@ import tkinter as tk
 root = tk.Tk()
 root.title("My App")
 
+def add_to_list():
+    text = entry.get()
+    if text:
+        text_list.insert(tk.END, text)
+
 frame = tk.Frame(root)
 frame.grid(row=0, column=0)
 
