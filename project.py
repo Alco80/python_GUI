@@ -4,9 +4,9 @@ root = tk.Tk()
 root.title("My App")
 
 lbl = tk.Label(root, text="This Label")
-lbl.grid()
+lbl.grid(row=0, column=0)
 
 btn = tk.Button(root, text="Press Me!")
-btn.grid()
+btn.grid(row=0, column=0)
 
 root.mainloop()
