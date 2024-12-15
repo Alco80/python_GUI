@@ -7,6 +7,8 @@ def add_to_list():
     text = entry.get()
     if text:
         text_list.insert(tk.END, text)
+        entry.delete(0, tk.END)
+        
 
 frame = tk.Frame(root)
 frame.grid(row=0, column=0)
